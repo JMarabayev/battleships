@@ -59,3 +59,12 @@ def getUserInput(self):
                 if column == "X":
                     hit_ships += 1
         return hit_ships
+# Playing the game
+def playGame():
+    computer_board = GameBoard([[" "]*8 for i in range(8)])
+    user_board = GameBoard([[" "]*8 for i in range(8)])
+    Battleship.generateShips(computer_board)
+    tries = 10
+    while tries < 0:
+        GameBoard.printBoard(user_board)
+        user_x_row, user_y_column = Battleship.getUserInput(object)
