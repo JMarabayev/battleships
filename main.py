@@ -12,8 +12,8 @@ class GameBoard:
 
 # Printing the board and Grid
     def printBoard(self):
-        print(" A B C D E F G H")
-        print(" +-+-+-+-+-+-+-+")
+        print("  A B C D E F G H")
+        print(" +-+-+-+-+-+-+-+-+")
         row_num= 1
         for row in self.board:
             print("%d|%s|" % (row_num, "|".join(row)))
@@ -22,11 +22,11 @@ class GameBoard:
 # Creating Battleship Class (Taken from tutorial mentioned in README)
 class Battleship:
 
-
+# initialising the board
     def __init__(self, board):
         self.board = board
 
-
+# creating computer ships
     def generateShips(self):
         for i in range(5):
             self.x_row, self.y_column = random.randint(0, 7), random.randint(0, 7)
@@ -52,7 +52,7 @@ class Battleship:
             print("Invalid Choice")
             return self.getUserInput()
     #Counting Ships that were hit
-    def hitCount(self1):
+    def count_hit_ships(self):
         hit_ships = 0
         for row in self.board:
             for column in row:
@@ -70,13 +70,13 @@ def playGame():
         user_x_row, user_y_column = Battleship.getUserInput(object)
         while user_board.board[user_x_row] [user_y_column] == '()' or user_board.board[user_x_row] [user_y_column] == 'X':
             print("You already tried that!")
-        if computer_board.board [user_x_row] [user_y_column] == 'X':
-            print("Congrats! Battle Ship Sunk!")
-            computer_board.board [user_x_row] [user_y_column] = 'X'
+        if computer_board.board[user_x_row][user_y_column] == "X":
+            print("You sunk 1 of my battleship!")
+            user_guess_board.board[user_x_row][user_y_column] = "X"
         else:
-            print("You missed!")
-            computer_board.board [user_x_row] [user_y_column] = '()'
-        if Battleship.hitCount(user_board) == 5:
+            print("You missed my battleship!")
+            user_guess_board.board[user_x_row][user_y_column] = "-"
+        if Battleship.count_hit_ships(user_board) == 5:
             print("All Ships Sunk! You Win!!")
             break
         else:
