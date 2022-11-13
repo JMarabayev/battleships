@@ -39,12 +39,12 @@ class Battleship:
     def getUserInput(self):
         try:
             x_row = input("Please Select the row coorinate (1-8)")
-            while x_row not in '12345678':
+            while not x_row or x_row not in set('12345678'):
                 print("You are either out of bounds, or don't know what numbers are")
                 x_row = input("Please Select the row coorinate (1-8)")
 
             y_column = input("Please Select the column coordinate (A-H)").upper()
-            while y_column not in 'ABCDEFGH':
+            while not y_column or y_column not in set('ABCDEFGH'):
                 print("You are either out of bounds, or don't know what Letters are")
                 y_column = input("Please Select the column coordinate (A-H)").upper()
             return int(x_row)-1, GameBoard.lettersToNumbers()[y_column]
