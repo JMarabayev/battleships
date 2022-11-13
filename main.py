@@ -68,8 +68,9 @@ def playGame():
     while tries > 0:
         GameBoard.printBoard(user_board)
         user_x_row, user_y_column = Battleship.getUserInput(object)
-        while user_board.board[user_x_row] [user_y_column] == '()' or user_board.board[user_x_row] [user_y_column] == 'X':
+        while user_board.board[user_x_row] [user_y_column] == '-' or user_board.board[user_x_row] [user_y_column] == 'X':
             print("You already tried that!")
+            user_x_row, user_y_column = Battleship.getUserInput(object)
         if computer_board.board[user_x_row][user_y_column] == "X":
             print("You sunk 1 of my battleship!")
             user_board.board[user_x_row][user_y_column] = "X"
@@ -81,7 +82,7 @@ def playGame():
             break
         else:
             tries -= 1
-            print(f'You have {tries} left')
+            print(f'You have {tries} tries left')
             if tries == 0:
                 print("You are out of shots, You lose!")
                 GameBoard.printBoard(user_board)
