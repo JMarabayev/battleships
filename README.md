@@ -18,6 +18,14 @@
 
 __When Making selections please make sure you wait for the input to prompt the selection, otherwise you might encounter an error!__
 
+## Screenshots 
+![Game Board](../battleships/screenshots/Screenshot%202022-11-13%20233457.png)
+<br/>
+
+![Gameplay](../battleships/screenshots/Screenshot%202022-11-13%20233525.png)
+<br/>
+
+![PEP8 Check](../battleships/screenshots/Screenshot%202022-11-13%20223355.png)
 ## Future additions to the code
 * Allow the player to select the board size
 * Different ship sizes

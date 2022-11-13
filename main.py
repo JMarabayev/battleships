@@ -1,6 +1,6 @@
 import random
 
-# Creating the gameboard, "I" was ommited in order to escape confusion
+# Creating the gameboard
 class GameBoard:  
     def __init__(self, board):
         self.board = board
