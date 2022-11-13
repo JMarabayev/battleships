@@ -72,10 +72,10 @@ def playGame():
             print("You already tried that!")
         if computer_board.board[user_x_row][user_y_column] == "X":
             print("You sunk 1 of my battleship!")
-            user_guess_board.board[user_x_row][user_y_column] = "X"
+            user_board.board[user_x_row][user_y_column] = "X"
         else:
             print("You missed my battleship!")
-            user_guess_board.board[user_x_row][user_y_column] = "-"
+            user_board.board[user_x_row][user_y_column] = "-"
         if Battleship.count_hit_ships(user_board) == 5:
             print("All Ships Sunk! You Win!!")
             break
