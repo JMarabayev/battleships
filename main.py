@@ -64,6 +64,7 @@ def playGame():
     computer_board = GameBoard([[" "] * 8 for i in range(8)])
     user_board = GameBoard([[" "]*8 for i in range(8)])
     Battleship.generateShips(computer_board)
+    # Counting number of tries
     tries = 10
     while tries > 0:
         GameBoard.printBoard(user_board)
