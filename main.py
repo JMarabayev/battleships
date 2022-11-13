@@ -35,7 +35,7 @@ class Battleship:
             self.board[self.x_row][self.y_column] = "X"
         return self.board
 
-# Getting user Input
+# Getting user Input 
     def getUserInput(self):
         try:
             x_row = input("Please Select the row coorinate (1-8)")
