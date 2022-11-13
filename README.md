@@ -39,7 +39,7 @@ __When Making selections please make sure you wait for the input to prompt the s
 
 ## Credits and References
 * This game was created under the tutorial from "Knowledge Mavens" from [YouTube](https://www.youtube.com/watch?v=alJH_c9t4zw).
-* System would recognise an empty input or an input like 12 as a viable input... Fixed with the help from stack overflow. user - Samwise
+* System would recognise an empty input or an input like 12 as a viable input... Fixed with the help from stack overflow. user - [Samwise](https://stackoverflow.com/users/3799759/samwise)
 
 ## Checks
 * This app passes through the relevant PEP8 without any major errors (Errors such as Whitespace and double lines between functions are visible as well as an error for a line that is too long.) in many cases I have chosen to ignore the small error due to maintaining the readability of the code.
