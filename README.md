@@ -1,4 +1,8 @@
 # Welcome to my Python Battleships game!
+Battleships is a common game which I attempted to recreate in Python 
+
+User will take try to guess the position of the ships that a computer randomly generates, unlike the traditional game in which there are different sized ships and both player and computer lay them out on their respective boards and take turns guessing. 
+This is a simplified version, but not less challenging, as there are 5 single space ships on a 8*8 grid giving the user only 10 guesses, which would prove a lot more challenging than it seems.
 ## The rules of the game are quite simple:
 1. You start the game by running the file
 2. The computer generates 5 ships randomly in an 8x8 Grid
@@ -18,6 +22,12 @@
 
 __When Making selections please make sure you wait for the input to prompt the selection, otherwise you might encounter an error!__
 
+## Features
+* Randomly Generated Computer Board
+* Turn Counter from 10 to 0
+* Hit or miss indicator on the grid
+* Input Validator 
+
 ## Screenshots 
 ![Game Board](../battleships/screenshots/Screenshot%202022-11-13%20233457.png)
 <br/>
@@ -26,6 +36,11 @@ __When Making selections please make sure you wait for the input to prompt the s
 <br/>
 
 ![PEP8 Check](../battleships/screenshots/Screenshot%202022-11-13%20223355.png)
+
+## Data Model
+* GameBoard class stores the grid size and coordinate positioning
+* Battleships class generates randomly positioned 1x1 ships on the grid, also contains user input functions that record and store the guesses 
+
 ## Future additions to the code
 * Allow the player to select the board size
 * Different ship sizes
@@ -35,7 +50,13 @@ __When Making selections please make sure you wait for the input to prompt the s
 
 ## Bugs 
 * The game runs into a critical error if selection is done before the input prompt
-* System would recognise an empty input or an input like 12 as a viable input... Fixed with the help from stack overflow.
+* System would recognise an empty input or an input like 12 as a viable input... __Fixed with the help from stack overflow.__
+
+## Manual Testing
+* Passed through the PEP8 validator without issues
+* Input of wrong data comes back with a prompt to put in right data 
+* Game completion and conditions work as intended
+
 
 ## Credits and References
 * This game was created under the tutorial from "Knowledge Mavens" from [YouTube](https://www.youtube.com/watch?v=alJH_c9t4zw).
