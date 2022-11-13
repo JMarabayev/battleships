@@ -15,3 +15,21 @@
     * No board would be printed in that case
 9. After a shot, your "Tries" counter goes from 10 to 0 by incriments of 1 and when you reach 0 with enemy ships still remainig, it is game over
 10. If you manage to destroy all enemy ships, Congratulations, You Win!
+
+__When Making selections please make sure you wait for the input to prompt the selection, otherwise you might encounter an error!__
+
+## Future additions to the code
+* Allow the player to select the board size
+* Different ship sizes
+* Have the computer guess player ships (would probably be random at first and then implement AI)
+* 2 Player Game
+* Online multiplayer functionaity
+
+## Bugs 
+* The game runs into a critical error if selection is done before the input prompt
+
+## Credits and References
+* This game was created under the tutorial from "Knowledge Mavens" from [YouTube](https://www.youtube.com/watch?v=alJH_c9t4zw).
+
+## Checks
+* This app passes through the relevant PEP8 

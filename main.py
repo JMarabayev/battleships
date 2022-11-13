@@ -86,6 +86,7 @@ def playGame():
             if tries == 0:
                 print("You are out of shots, You lose!")
                 GameBoard.printBoard(user_board)
+                GameBoard.printBoard(computer_board)
                 break
 if __name__== '__main__':
     playGame()
